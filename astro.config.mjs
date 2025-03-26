@@ -9,6 +9,8 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  site: 'https://n3uralx.github.io',
+  base: 'my-n3uralx-livelinks',  
 
   integrations: [icon()],
 });
