@@ -1,0 +1,51 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<nav
+  id="navbar"
+  class="bg-black-950 border-b border-gray-500 sticky start-0 top-0 z-50 w-full backdrop-blur-sm transition-colors duration-300"
+>
+  <div class="flex flex-wrap justify-between items-center mx-auto container p-4 px-6">
+    <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <!-- <img src="" class="h-8" " /> -->
+      <span class="self-center text-3xl font-semibold whitespace-nowrap text-white">N3uralX</span>
+    </a>
+    <div class="flex items-center space-x-2 rtl:space-x-reverse">
+      <a
+        href="https://www.linkedin.com/company/n3uralx"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-[#0077B5] hover:text-[#005582] transition-colors duration-200"
+        aria-label="neuralx-linkedin"
+      >
+        <Icon name="mdi:linkedin" size={32} />
+      </a>
+
+      <a
+        href="https://www.instagram.com/n3uralx.kmea"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-[#E1306C] hover:text-[#C21A4B] transition-colors duration-200"
+        aria-label="neuralx-instagram"
+      >
+        <Icon name="mdi:instagram" size={28} />
+      </a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener("scroll", () => {
+    const navbar = document.getElementById("navbar");
+    if (!navbar) return;
+
+    if (window.scrollY > 55) {
+      navbar.classList.remove("bg-black-950");
+      navbar.classList.add("bg-black-950/90");
+    } else {
+      navbar.classList.remove("bg-black-950/90");
+      navbar.classList.add("bg-black-950");
+    }
+  });
+</script>

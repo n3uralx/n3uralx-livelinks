@@ -1,0 +1,22 @@
+{
+  "upcoming": [
+    {
+      "title": "New Exciting Project",
+      "date": "21-01-3032",
+      "comingSoon": true,
+      "description": "A brief description of the upcoming project."
+    }
+  ],
+  "current": [
+    {
+      "title": "Upcoming Project",
+      "date": "26-03-2025",
+      "description": "Details about the upcoming project.",
+      "links": [
+        { "title": "Demo", "url": "https://completed-project.demo" },
+        { "title": "Documentation", "url": "https://completed-project.docs" }
+      ]
+    }
+  ],
+  "past": []
+}
